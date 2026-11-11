@@ -1,1 +1,38 @@
 
+/* GameSir G7 Pro 8K - Gamepad Viewer */
+
+.edit {
+    filter: drop-shadow(0 0 8px rgba(255, 35, 35, 0.35));
+}
+
+/* Corpo do controle */
+.edit .controller,
+.edit .gamepad {
+    border-radius: 28px;
+}
+
+/* Botões ABXY */
+.edit .button {
+    transition: filter 0.08s ease, transform 0.08s ease;
+}
+
+/* Botões pressionados */
+.edit .button.pressed,
+.edit .button.active {
+    filter: brightness(1.8) drop-shadow(0 0 7px #ff2525);
+}
+
+/* Analógicos */
+.edit .stick {
+    filter: drop-shadow(0 0 4px rgba(255, 40, 40, 0.5));
+}
+
+/* Gatilhos */
+.edit .trigger {
+    transition: opacity 0.08s ease;
+}
+
+/* Direcional */
+.edit .dpad .pressed {
+    filter: brightness(1.7);
+}
